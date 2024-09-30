@@ -1,0 +1,24 @@
+<h1 align="center" style="margin: 10px; margin-top: 20px;">Registation Page</h1>
+<form align="center" style="margin: 10px;" action="{% url 'register' %}" method="post">
+    {% csrf_token %}
+    <div style="margin-bottom: 8px; margin-top: 20px;">
+        Name:<input type="text" name="name" />
+    </div>
+    
+    <br>
+    <div style="margin-bottom: 8px;">
+        Email:<input type="email" name="email" />
+    </div>
+    
+    <br>
+    <div style="margin-bottom: 8px;">
+        Contact:<input type="tel" name="contact" />
+    </div>
+    
+    <br>
+    <div style="margin-bottom: 8px;">
+        Password:<input type="password" name="password" />
+    </div>
+    <br>
+    <button style="background-color: brown; color: white; font-size: 20px;" type="submit">Submit</button>
+</form>
